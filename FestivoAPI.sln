@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FestivoAPI", "FestivoAPI\FestivoAPI.csproj", "{C3D8E0BC-1C33-4337-A146-28E9AEE1D4E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.DataAccessLayer", "API.DataAccessLayer\API.DataAccessLayer.csproj", "{ED8B4688-B718-4690-805C-E81F9462D200}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.Models", "API.Models\API.Models.csproj", "{623B56A6-737E-4DF4-83DB-0232346C5FCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.BusinessLogic", "API.BusinessLogic\API.BusinessLogic.csproj", "{214C515B-D460-4F98-9DA6-8C62345D46E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3D8E0BC-1C33-4337-A146-28E9AEE1D4E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3D8E0BC-1C33-4337-A146-28E9AEE1D4E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3D8E0BC-1C33-4337-A146-28E9AEE1D4E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3D8E0BC-1C33-4337-A146-28E9AEE1D4E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED8B4688-B718-4690-805C-E81F9462D200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED8B4688-B718-4690-805C-E81F9462D200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED8B4688-B718-4690-805C-E81F9462D200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED8B4688-B718-4690-805C-E81F9462D200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{623B56A6-737E-4DF4-83DB-0232346C5FCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{623B56A6-737E-4DF4-83DB-0232346C5FCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{623B56A6-737E-4DF4-83DB-0232346C5FCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{623B56A6-737E-4DF4-83DB-0232346C5FCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{214C515B-D460-4F98-9DA6-8C62345D46E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{214C515B-D460-4F98-9DA6-8C62345D46E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{214C515B-D460-4F98-9DA6-8C62345D46E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{214C515B-D460-4F98-9DA6-8C62345D46E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F831F8D-F675-4EBE-A5C8-22B8EF3DDA02}
+	EndGlobalSection
+EndGlobal
