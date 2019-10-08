@@ -56,7 +56,29 @@ namespace FestivoAPI.Controllers
             }
             
         }
-        
+
+        //[HttpPost("addOrderHistory")]
+        //public string PostOrder([FromBody] CartItem model)
+        //{
+        //    if (cart.DeleteCart(model))
+        //    {
+        //        Success obj = new Success()
+        //        {
+        //            Succeed = true
+        //        };
+        //        return Newtonsoft.Json.JsonConvert.SerializeObject(obj);
+        //    }
+        //    else
+        //    {
+        //        Success obj = new Success()
+        //        {
+        //            Succeed = false
+        //        };
+        //        return Newtonsoft.Json.JsonConvert.SerializeObject(obj);
+        //    }
+
+        //}
+
         [HttpPost("removeFromCart")]
         public string PostC([FromBody] CartItem model)
         {
@@ -93,6 +115,11 @@ namespace FestivoAPI.Controllers
             cart.ClearCart(model);
         }
 
+        [HttpPost("deleteCart")]
+        public void delete([FromBody] CartItem model)
+        {
+            cart.DeleteCart(model);
+        }
 
 
         [HttpPost("getTotal")]

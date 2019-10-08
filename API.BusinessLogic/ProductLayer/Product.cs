@@ -35,8 +35,9 @@ namespace API.BusinessLogic.ProductLayer
 
         public bool UpdateData(int id, Products model)
         {
-
+            
             var query = context.products.Where(z => z.ProductId == id).FirstOrDefault();
+     
             query.ProductName = model.ProductName;
             query.ProductImage = model.ProductImage;
             query.ProductDescription = model.ProductDescription;

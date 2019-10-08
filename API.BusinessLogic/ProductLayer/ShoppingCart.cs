@@ -84,6 +84,35 @@ namespace API.BusinessLogic.ProductLayer
             db.SaveChanges();
         }
 
+        public bool DeleteCart(CartItem delete)
+        {
+
+
+            var verify = db.carts.Where(p => p.UserId == delete.UserId);
+            foreach (var c in verify)
+            {
+                var query = db.orders.Where(z => z.ProductId == c.ProductId).FirstOrDefault();
+                //query.Quantity -= c.Quantity;
+                //db.SaveChanges();
+                //OrderHistory order = new OrderHistory
+                //{
+                //    ProductId = c.ProductId,
+                //    ProductName = c.ProductName,
+                //    ProductPrice = c.ProductPrice,
+                //    Quantity = c.Quantity,
+                //    ProductTotal = c.ProductTotal,
+                //    UserId = c.UserId
+
+                //};
+                //db.orders.Add(order);
+                db.Entry(c).State = Microsoft.EntityFrameworkCore.EntityState.Deleted;
+            }
+
+            db.SaveChanges();
+            return true;
+        }
+
+
         public int CartTotal(CartItem cart)
         {
             int cartTotal = 0;

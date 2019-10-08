@@ -33,8 +33,7 @@ namespace API.DataAccessLayer
         public DbSet<CartItem> carts { get; set; }
         public DbSet<Checkout> checkouts { get; set; }
         public DbSet<Payment> Payments { get; set; }
-
-
+        public DbSet<OrderHistory> orders { get; set; }
 
     }
 }
